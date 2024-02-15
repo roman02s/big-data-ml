@@ -31,8 +31,8 @@ jobs:
 
     - name: Commit and Push Diagrams
       run: |
-        git config --global user.email "action@github.com"
-        git config --global user.name "GitHub Action"
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
         git add docs/diagrams/*
         git commit -m "Auto-update diagrams"
-        git push https://${{ secrets.GH_PAT }}@github.com/roman02s/big-data-ml.git
+        git push https://${{ secrets.GH_PAT }}@github.com/roman02s/big-data-ml.git 
