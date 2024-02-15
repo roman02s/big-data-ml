@@ -5,7 +5,7 @@ graph_attr = {
     "splines": "spline",
 }
 
-with Diagram(filename="./docs/diagrams/level 1", outformat="png", show=False, direction="TB", graph_attr=graph_attr):
+with Diagram(filename="./docs/diagrams/level_1", outformat="png", show=False, direction="TB", graph_attr=graph_attr):
     advertiser = Person(
         name="Advertiser",
         description="A business or individual placing ads"
