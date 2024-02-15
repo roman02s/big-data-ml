@@ -24,7 +24,8 @@ jobs:
     - name: Generate diagrams 1-2-3
       run: |
         mkdir -p docs/diagrams
-        for file in "$(ls ./src/diagrams/*.py)"; do
+        files="$(ls ./src/diagrams/*.py)"
+        for file in ${files}; do
           python "${file}"
         done
 
