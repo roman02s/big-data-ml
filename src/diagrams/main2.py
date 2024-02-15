@@ -5,7 +5,7 @@ graph_attr = {
     "splines": "spline",
 }
 
-with Diagram(filename="./docs/diagrams/level 2", direction="TB", graph_attr=graph_attr):
+with Diagram(filename="./docs/diagrams/level 2", direction="TB",show=False, graph_attr=graph_attr):
     user = Person("User")
 
     platform = System(
