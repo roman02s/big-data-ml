@@ -23,9 +23,10 @@ jobs:
 
     - name: Generate diagrams 1-2-3
       run: |
-        python ./src/diagrams/main1.py
-        python ./src/diagrams/main2.py
-        python ./src/diagrams/main3.py
+        mkdir -p docs/diagrams
+        for file in "$(ls ./src/diagrams/*.py)"; do
+          python "${file}"
+        done
 
     - name: Commit and Push Diagrams
       run: |
