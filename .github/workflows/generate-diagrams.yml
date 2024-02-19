@@ -34,5 +34,5 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add docs/diagrams/*
-        git commit -m "Auto-update diagrams"
+        git commit -m "Auto-update diagrams" || echo "No changes"
         git push https://${{ secrets.GH_PAT }}@github.com/roman02s/big-data-ml.git 
